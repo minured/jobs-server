@@ -1,0 +1,17 @@
+@url = http://localhost:4001/api
+@header = Content-Type: application/json
+
+### 投递
+POST {{url}}/delivery
+{{header}}
+
+{
+    "senderId": "1111",
+    "jobId": "22222",
+    "companyId": "3333",
+    "resumeId": "123333"      
+}
+
+### 投递信箱
+GET {{url}}/delivery
+{{header}}

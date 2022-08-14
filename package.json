@@ -1,0 +1,15 @@
+{
+  "name": "jobs-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "pm2 start ./app.js --watch",
+    "model:setup": "node ./model/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  }
+}
