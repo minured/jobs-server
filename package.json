@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node ./app.js",
+    "dev": "nodemon ./app.js",
     "start": "pm2 start ./app.js --watch",
     "model:setup": "node ./model/index.js"
   },

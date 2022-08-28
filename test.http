@@ -1,8 +1,10 @@
 @url = http://localhost:4001/api
 @header = Content-Type: application/json
+@user1 = Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMGIzOTkzNzMyNmZlMThiOTViZjA4MyIsImlhdCI6MTY2MTY4MDkyM30.j4rtA4PTUyy6PMY7VqdSPybAKoWy67-CjAP2LgpjfRQ
 
 ### 投递
 POST {{url}}/delivery
+{{user1}}
 {{header}}
 
 {
@@ -14,4 +16,25 @@ POST {{url}}/delivery
 
 ### 投递信箱
 GET {{url}}/delivery
+{{user1}}
 {{header}}
+
+### 注册
+POST {{url}}/register
+{{header}}
+
+{
+    "username": "111115",
+    "password": "111111",
+    "type": 2
+}
+
+### 登录
+POST {{url}}/login
+{{header}}
+
+{
+    "username": "111115",
+    "password": "111111",
+    "type": 2
+}
